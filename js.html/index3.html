@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="">
+    <h2 id="heading">javascript example</h2>
+    <input id="userinput" placeholder="YOUR NAME">
+
+    <!-- <button onclick="myfunction2()">CLICK ME</button> -->
+    <button onclick="myfunction2()">CLICK ME</button>
+    <script>
+        function myfunction2(){
+          //  let name=document.getElementById("userinput").value;
+            //console.log("selected value",name)
+           // alert("welcome" + name)
+           if(name.length  < 3){
+            alert("ERROR: Name Length cannot be less then 3")
+           } else if(name.length>10){
+            alert("ERROR: Name Length cannot be more then 10 ")
+        }
+           else{
+            //only numerical values allow
+            for(let i=0; i< name.length; i=i+1)
+            {
+                let digit = parseInt(name[i]);
+                if(isNaN(digit)){
+                    alert("Text should only have number");
+                }else{
+                    console.log("looks good")
+                }
+            
+            }
+            console.log("Validation completed")
+           }
+        }
+
+            //let header=document.getElementById("heading");
+            //header.innerHTML = "welcome" + name;
+                </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link href="index.css" rel="stylesheet" type="text"/>
+</head>
+<!-- <body onload="myfunction()"> /* this line will create a feature'when the page load it will firstly take alerts and confermation */ -->
+    <body onload="">
+    <!-- onload tab works when the page load /reload and show alert-->
+    <!-- <h1>Javascript Examples</h1> -->
+    <h2 id="heading"> javascript Example</h2>
+    <!-- <input onchange="myfunction2()"> -->
+    <!-- <input onkeydown="myfunction2()"> -->
+    <!-- <input onkeyup="myfunction2()"> -->
+    <input  id="userinput"  placeholder="YOUR NAME">
+    <button onclick="myfunction3()">Click Me</button>
+    <!-- onclick tab works when we click on "click me" and show alert-->
+    <script>
+        //define java script here
+        function myfunction2()//comment.....myfunction2 word define the javascript it is a commond of input onkeyup  from body section
+        {
+            console.log("second function!@@")
+        }
+        // reslut of console will be show in the console section of inspect bars of browser
+        // function myfunction(){
+            //function body
+            // alert("javascript function!!!")
+        // }
+        function myfunction3(){
+            //function body
+            //the below two line are use to take input 'name' due to use of prompt tab
+            let name=prompt("enter your name");
+            console.log("name is:",name);
+        //the below to line are use to show alert and take confirmation by using yes/no key botton as alert
+            let myvar= confirm("are you sure");
+            console.log("value in myvar is");
+            console.log(myvar)
+        //}
+//        function myfunction4(){
+            let name = document.getElementById("user input").value;
+            console.log("Selected value",name)
+            alert("welcome"+name)
+
+            let header=document.getElementById("heading");
+            header.innerhtml = "welcome" + name;
+        }
+    </script>
+
+</body>
+</html>
